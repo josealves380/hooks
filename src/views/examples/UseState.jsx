@@ -17,19 +17,19 @@ const UseState = (props) => {
                 <span className="text">{count}</span>
                 <di>
                     <button className="btn"
-                    onClick={() => setCount(count - 1)}>-1</button>
+                        onClick={() => setCount(count - 1)}>-1</button>
                     <button className="btn"
-                    onClick={() => setCount(count + 1)}>+1</button>
+                        onClick={() => setCount(count + 1)}>+1</button>
                     <button className="btn"
-                    onClick={() => setCount(currect => currect + 100)}>+100</button>
+                        onClick={() => setCount(currect => currect + 100)}>+100</button>
                 </di>
 
             </div>
 
             <SectionTitle title="Exercício #02" />
-            
-            <input type="text" className="input" 
-            value={name} placeholder="Digite seu nome:" onChange={e => setName(e.target.value)} />
+
+            <input type="text" className="input"
+                value={name} placeholder="Digite seu nome:" onChange={e => setName(e.target.value)} />
             <span className="text">{name}</span>
         </div>
     )
