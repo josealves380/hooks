@@ -5,9 +5,9 @@ import UseCallbackButtons from './UseCallbackButtons'
 const UseCallback = (props) => {
     const [count, setCount] = useState(0)
 
-    function inc(delta) {
-        setCount(count + delta)
-    }
+    const inc = UseCallback(function (delta) {
+        setCount(curr => curr + delta)
+    }, [setCount)
 
     return (
         <div className="UseCallback">
