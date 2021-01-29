@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
 import UseCallbackButtons from './UseCallbackButtons'
 
 const UseCallback = (props) => {
     const [count, setCount] = useState(0)
 
-    const inc = UseCallback(function (delta) {
+    const inc = useCallback(function (delta) {
         setCount(curr => curr + delta)
-    }, [setCount)
+    }, [setCount])
 
     return (
         <div className="UseCallback">
